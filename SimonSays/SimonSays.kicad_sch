@@ -1171,7 +1171,7 @@
     (uuid 228059e3-e3c4-46b3-ad02-441c163a776b)
     (property "Reference" "R9" (id 0) (at 141.224 48.26 90))
     (property "Value" "10K" (id 1) (at 141.224 50.8 90))
-    (property "Footprint" "" (id 2) (at 141.478 53.848 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (id 2) (at 141.478 53.848 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 141.224 54.864 0)
@@ -1209,7 +1209,7 @@
     (property "Value" "SW_Push" (id 1) (at 189.23 119.8879 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "" (id 2) (at 190.5 118.618 0)
+    (property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" (id 2) (at 190.5 118.618 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 190.5 118.618 0)
@@ -1247,7 +1247,7 @@
     (property "Value" "SW_Push" (id 1) (at 165.1 119.8879 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "" (id 2) (at 166.116 118.618 0)
+    (property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" (id 2) (at 166.116 118.618 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 166.116 118.618 0)
@@ -1314,7 +1314,7 @@
     (property "Value" "SW_Push" (id 1) (at 141.224 120.6499 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "" (id 2) (at 142.24 119.38 0)
+    (property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" (id 2) (at 142.24 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 142.24 119.38 0)
@@ -1403,7 +1403,7 @@
     (property "Value" "ws" (id 1) (at 116.84 121.4119 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "" (id 2) (at 117.856 120.142 0)
+    (property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" (id 2) (at 117.856 120.142 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 117.856 120.142 0)
@@ -1589,7 +1589,7 @@
   (symbol (lib_id "MCU_Microchip_ATmega:ATmega328-P") (at 143.256 71.374 270) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f5606098-a4b5-4eeb-9fa5-f9d99a2e7a01)
-    (property "Reference" "UIntegratedCircuit1" (id 0) (at 176.5047 53.34 90)
+    (property "Reference" "IntegratedCircuit" (id 0) (at 176.5047 53.34 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ATmega328-P" (id 1) (at 176.5047 55.88 90)
@@ -1687,6 +1687,9 @@
     (path "/3ec61d98-ee61-475a-a9c1-9662d4842c34"
       (reference "D4") (unit 1) (value "Red") (footprint "LED_THT:LED_D3.0mm")
     )
+    (path "/f5606098-a4b5-4eeb-9fa5-f9d99a2e7a01"
+      (reference "IntegratedCircuit") (unit 1) (value "ATmega328-P") (footprint "Package_DIP:DIP-28_W7.62mm")
+    )
     (path "/e962bc73-4e3b-4fbe-90ec-ef049ff02d8b"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
@@ -1712,22 +1715,19 @@
       (reference "R8") (unit 1) (value "10k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
     (path "/228059e3-e3c4-46b3-ad02-441c163a776b"
-      (reference "R9") (unit 1) (value "10K") (footprint "")
+      (reference "R9") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
     (path "/8f68f853-0400-4a27-967f-ab868c4f04dd"
-      (reference "SW1") (unit 1) (value "ws") (footprint "")
+      (reference "SW1") (unit 1) (value "ws") (footprint "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx")
     )
     (path "/4b6b1196-6d1d-4776-a754-4c16c447bf4d"
-      (reference "SW2") (unit 1) (value "SW_Push") (footprint "")
+      (reference "SW2") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx")
     )
     (path "/402307f2-18fd-4edb-b9fd-0ddb66313638"
-      (reference "SW3") (unit 1) (value "SW_Push") (footprint "")
+      (reference "SW3") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx")
     )
     (path "/2bd2fde5-740a-47d2-ae92-3a92e886fd42"
-      (reference "SW4") (unit 1) (value "SW_Push") (footprint "")
-    )
-    (path "/f5606098-a4b5-4eeb-9fa5-f9d99a2e7a01"
-      (reference "UIntegratedCircuit1") (unit 1) (value "ATmega328-P") (footprint "Package_DIP:DIP-28_W7.62mm")
+      (reference "SW4") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx")
     )
     (path "/83e3b593-8bcf-44c4-82ef-5843b2b698b8"
       (reference "X1") (unit 1) (value "Crystal") (footprint "Crystal:Crystal_HC18-U_Vertical")
