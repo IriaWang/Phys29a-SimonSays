@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/home/Desktop/Phys29a-SimonSays/SimonSays/SimonSays.kicad_sch</source>
+    <date>Thursday, March 10, 2022 at 09:02:09 AM</date>
+    <tool>Eeschema (6.0.2-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>SimonSays.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="5V1">
+      <value>Battery_Cell</value>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>672cce20-82ef-4cef-a268-b67f5ebf55d6</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>1nF</value>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d3835c0-f8f5-4771-8e5c-42d876c83a65</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>1nF</value>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f30091af-0781-48ab-a1a3-d6f6349c9c71</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>Blue</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0be4244f-8e96-4893-a299-e98dc8d4f872</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>Yellow</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91729398-e312-40e3-923a-85ad380afa7a</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>Red</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a93f1b2c-885b-45fb-95cb-cee2cf6e14d2</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>Green</value>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3ec61d98-ee61-475a-a9c1-9662d4842c34</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e962bc73-4e3b-4fbe-90ec-ef049ff02d8b</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05a9fc35-e3d0-4610-9a9a-f14e7effcd03</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1257492e-ab71-457c-9af6-58db173d3107</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f68f645-e273-4832-bc9f-d5c43ffaf5eb</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19714f8a-48fe-443c-a326-7f371f1adfa6</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2aa98cc4-66b3-4f54-a05d-b2d94b998e25</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c96883dc-9e9a-495f-85e7-b2b49620a5c7</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca9feb57-9cf1-4b17-aac0-8eb7e03f359e</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10K</value>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>228059e3-e3c4-46b3-ad02-441c163a776b</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>cd</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf</datasheet>
+      <libsource lib="Analog_Switch" part="ADG417BN" description="Single SPST Monolithic LC²MOS Analog Switch, normally OFF, 25Ohm Ron, DIP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa31f56c-0a95-47ea-94eb-9869430ef7b0</tstamps>
+    </comp>
+    <comp ref="S2">
+      <value>ADG417BN</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf</datasheet>
+      <libsource lib="Analog_Switch" part="ADG417BN" description="Single SPST Monolithic LC²MOS Analog Switch, normally OFF, 25Ohm Ron, DIP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5da39b05-344e-4ab4-b059-9a00e33b8abe</tstamps>
+    </comp>
+    <comp ref="S3">
+      <value>ADG417BN</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf</datasheet>
+      <libsource lib="Analog_Switch" part="ADG417BN" description="Single SPST Monolithic LC²MOS Analog Switch, normally OFF, 25Ohm Ron, DIP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e47b8ba0-a320-4f8c-ac6d-22e24d73688f</tstamps>
+    </comp>
+    <comp ref="S4">
+      <value>ADG417BN</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf</datasheet>
+      <libsource lib="Analog_Switch" part="ADG417BN" description="Single SPST Monolithic LC²MOS Analog Switch, normally OFF, 25Ohm Ron, DIP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f20459b-c1eb-444e-a229-a524e765e1e0</tstamps>
+    </comp>
+    <comp ref="UIntegratedCircuit1">
+      <value>ATmega328-P</value>
+      <footprint>Package_DIP:DIP-28_W7.62mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATmega" part="ATmega328-P" description="20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5606098-a4b5-4eeb-9fa5-f9d99a2e7a01</tstamps>
+    </comp>
+    <comp ref="X1">
+      <value>Crystal</value>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SimonSays.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83e3b593-8bcf-44c4-82ef-5843b2b698b8</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Analog_Switch" part="ADG417BN">
+      <description>Single SPST Monolithic LC²MOS Analog Switch, normally OFF, 25Ohm Ron, DIP-8</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADG417BN</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/ADG417.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="VL" type="power_in"/>
+        <pin num="6" name="" type="input"/>
+        <pin num="7" name="V-" type="power_in"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_ATmega" part="ATmega328-P">
+      <description>20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATmega328-P</field>
+        <field name="Footprint">Package_DIP:DIP-28_W7.62mm</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RESET}/PC6" type="bidirectional"/>
+        <pin num="2" name="PD0" type="bidirectional"/>
+        <pin num="3" name="PD1" type="bidirectional"/>
+        <pin num="4" name="PD2" type="bidirectional"/>
+        <pin num="5" name="PD3" type="bidirectional"/>
+        <pin num="6" name="PD4" type="bidirectional"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="XTAL1/PB6" type="bidirectional"/>
+        <pin num="10" name="XTAL2/PB7" type="bidirectional"/>
+        <pin num="11" name="PD5" type="bidirectional"/>
+        <pin num="12" name="PD6" type="bidirectional"/>
+        <pin num="13" name="PD7" type="bidirectional"/>
+        <pin num="14" name="PB0" type="bidirectional"/>
+        <pin num="15" name="PB1" type="bidirectional"/>
+        <pin num="16" name="PB2" type="bidirectional"/>
+        <pin num="17" name="PB3" type="bidirectional"/>
+        <pin num="18" name="PB4" type="bidirectional"/>
+        <pin num="19" name="PB5" type="bidirectional"/>
+        <pin num="20" name="AVCC" type="power_in"/>
+        <pin num="21" name="AREF" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+        <pin num="23" name="PC0" type="bidirectional"/>
+        <pin num="24" name="PC1" type="bidirectional"/>
+        <pin num="25" name="PC2" type="bidirectional"/>
+        <pin num="26" name="PC3" type="bidirectional"/>
+        <pin num="27" name="PC4" type="bidirectional"/>
+        <pin num="28" name="PC5" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Analog_Switch">
+      <uri>/Volumes/KiCad/KiCad/KiCad.app/Contents/SharedSupport/symbols//Analog_Switch.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Volumes/KiCad/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="MCU_Microchip_ATmega">
+      <uri>/Volumes/KiCad/KiCad/KiCad.app/Contents/SharedSupport/symbols//MCU_Microchip_ATmega.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GNDREF">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="22" pinfunction="GND" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="8" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="2" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(R5-Pad1)">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(S1-Pad1)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="S1" pin="1" pintype="passive"/>
+      <node ref="S1" pin="6" pintype="input"/>
+    </net>
+    <net code="7" name="Net-(S2-Pad1)">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="S2" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(S3-Pad6)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="S3" pin="1" pintype="passive"/>
+      <node ref="S3" pin="6" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(S3-Pad8)">
+      <node ref="S3" pin="8" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="19" pinfunction="PB5" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="Net-(S4-Pad1)">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="S4" pin="1" pintype="passive"/>
+      <node ref="S4" pin="6" pintype="input"/>
+    </net>
+    <net code="11" name="Net-(UIntegratedCircuit1-Pad1)">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="1" pinfunction="~{RESET}/PC6" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="Net-(UIntegratedCircuit1-Pad4)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="4" pinfunction="PD2" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="Net-(UIntegratedCircuit1-Pad5)">
+      <node ref="S2" pin="8" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="5" pinfunction="PD3" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="Net-(UIntegratedCircuit1-Pad7)">
+      <node ref="5V1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="7" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="15" name="Net-(UIntegratedCircuit1-Pad9)">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="9" pinfunction="XTAL1/PB6" pintype="bidirectional"/>
+      <node ref="X1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(UIntegratedCircuit1-Pad10)">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="10" pinfunction="XTAL2/PB7" pintype="bidirectional"/>
+      <node ref="X1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(UIntegratedCircuit1-Pad12)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="12" pinfunction="PD6" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="Net-(UIntegratedCircuit1-Pad15)">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="15" pinfunction="PB1" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="Net-(UIntegratedCircuit1-Pad16)">
+      <node ref="S4" pin="8" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="16" pinfunction="PB2" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="Net-(UIntegratedCircuit1-Pad18)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="18" pinfunction="PB4" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="Net-(UIntegratedCircuit1-Pad20)">
+      <node ref="5V1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="UIntegratedCircuit1" pin="20" pinfunction="AVCC" pintype="power_in"/>
+    </net>
+    <net code="22" name="unconnected-(S1-Pad8)">
+      <node ref="S1" pin="8" pintype="passive"/>
+    </net>
+    <net code="23" name="unconnected-(S2-Pad6)">
+      <node ref="S2" pin="6" pintype="input"/>
+    </net>
+    <net code="24" name="unconnected-(UIntegratedCircuit1-Pad2)">
+      <node ref="UIntegratedCircuit1" pin="2" pinfunction="PD0" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="unconnected-(UIntegratedCircuit1-Pad3)">
+      <node ref="UIntegratedCircuit1" pin="3" pinfunction="PD1" pintype="bidirectional"/>
+    </net>
+    <net code="26" name="unconnected-(UIntegratedCircuit1-Pad6)">
+      <node ref="UIntegratedCircuit1" pin="6" pinfunction="PD4" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="unconnected-(UIntegratedCircuit1-Pad11)">
+      <node ref="UIntegratedCircuit1" pin="11" pinfunction="PD5" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="unconnected-(UIntegratedCircuit1-Pad13)">
+      <node ref="UIntegratedCircuit1" pin="13" pinfunction="PD7" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="unconnected-(UIntegratedCircuit1-Pad14)">
+      <node ref="UIntegratedCircuit1" pin="14" pinfunction="PB0" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(UIntegratedCircuit1-Pad17)">
+      <node ref="UIntegratedCircuit1" pin="17" pinfunction="PB3" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="unconnected-(UIntegratedCircuit1-Pad21)">
+      <node ref="UIntegratedCircuit1" pin="21" pinfunction="AREF" pintype="passive"/>
+    </net>
+    <net code="32" name="unconnected-(UIntegratedCircuit1-Pad23)">
+      <node ref="UIntegratedCircuit1" pin="23" pinfunction="PC0" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="unconnected-(UIntegratedCircuit1-Pad24)">
+      <node ref="UIntegratedCircuit1" pin="24" pinfunction="PC1" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(UIntegratedCircuit1-Pad25)">
+      <node ref="UIntegratedCircuit1" pin="25" pinfunction="PC2" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="unconnected-(UIntegratedCircuit1-Pad26)">
+      <node ref="UIntegratedCircuit1" pin="26" pinfunction="PC3" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="unconnected-(UIntegratedCircuit1-Pad27)">
+      <node ref="UIntegratedCircuit1" pin="27" pinfunction="PC4" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="unconnected-(UIntegratedCircuit1-Pad28)">
+      <node ref="UIntegratedCircuit1" pin="28" pinfunction="PC5" pintype="bidirectional"/>
+    </net>
+  </nets>
+</export>
