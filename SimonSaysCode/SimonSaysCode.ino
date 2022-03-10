@@ -29,7 +29,6 @@ void setup () {
     
   for(int Pin = 0; Pin < pinCount; Pin++){
     //set all buttons to input using pullup resistor built into board 
-    //I decided to add 10K resistors to the buttons after writing the code, you can change the code to use the external resistors, but it's not necessary
     pinMode(buttonArray[Pin], INPUT_PULLUP);
   }
  
@@ -128,12 +127,10 @@ void pre_game(){
 }
 
 //function for while game is playing
-void gamePlay()
-{
+void gamePlay(){
   Serial.println("gamePlay");
   //pre-load array with random numbers for game
-  for ( int i=0; i<NUMBERTOWIN; i++)
-  {
+  for ( int i=0; i<NUMBERTOWIN; i++){
     //use floor to round number down to nearest integer and random to choose random numbers from 0 to 3 to put in the gameValues array.
     gameValues[i] = floor(random(0,4));
     Serial.println(gameValues[i], DEC);
@@ -142,12 +139,10 @@ void gamePlay()
   
   Serial.print("Starting Round ");
   Serial.println(roundNum, DEC);
-  for (int r=0; r<NUMBERTOWIN; r++)
-  {
+  for (int r=0; r<NUMBERTOWIN; r++){
     displayClue(roundNum);
   
-    for (int i=0; i<=roundNum; i++)
-    {      
+    for (int i=0; i<=roundNum; i++){      
       Serial.print("Wainting for input ");
       Serial.print(i+1, DEC);
       Serial.print(" of ");
@@ -155,29 +150,23 @@ void gamePlay()
       Serial.println("");
   
       //wait for user input and see if they're correct, if correct wait for next input etc.. if not correct, fail
-      if (waitForInput(gameValues[i]))
-      {
+      if (waitForInput(gameValues[i])){
         //correct input
-        if (i==roundNum)
-        {
+        if (i==roundNum){
           Serial.println("Correct");
           //check if final round 
-          if (roundNum == NUMBERTOWIN-1)
-          {
+          if (roundNum == NUMBERTOWIN-1){
             Serial.println("You Win!");
            // you won! 
            // set gameState to 2 to run winning fuction
            gameState = 2;
            return;
-          }
-          else 
-          {
+          }else {
             Serial.println("Continue");
           }
         }
       }
-      else 
-      {
+      else{
         //incorrect input
         Serial.println("You Lose!");
 
@@ -194,114 +183,84 @@ void gamePlay()
   }
 }
 
-void setLed(int ledNum)
-{
+void setLed(int ledNum){
   //if the led number is less than zero turn all the leds off
-  if (ledNum<0)
-  {
-   for (int i = 0; i<pinCount; i++)
-   {
-   digitalWrite(ledArray[i], LOW);
-   }
-  }
-  else
-  {
+  if (ledNum<0){
+    for (int i = 0; i<pinCount; i++){
+      digitalWrite(ledArray[i], LOW);
+    }
+  } else{
     //turn on the specified led, turn off the other leds
     //turn one and only one led on - if i is the same as the number passed in from pre-game then turn on that light, if it is not the same turn off that light 
-    for (int i = 0; i<pinCount; i++)
-    {
-      if (i == ledNum)
-      {
+    for (int i = 0; i<pinCount; i++){
+      if (i == ledNum){
         digitalWrite(ledArray[i], HIGH);
-      }
-      else 
-      {
+      } else{
         digitalWrite(ledArray[i], LOW);
       }
     }
   }
- }
+}
 
 
- void displayClue(int roundNum)
- {
+void displayClue(int roundNum){
   //turn all lights off
   setLed(-1);
-  for (int i=0; i<=roundNum; i++)
-  {
+  for (int i=0; i<=roundNum; i++){
     //turn on led that matches current round
     setLed(gameValues[i]);
     delay(750);
     setLed(-1);
     delay(250);
   }
- }
+}
 
-boolean waitForInput(int buttonNum)
-{
+boolean waitForInput(int buttonNum){
   //read all the buttons continuously until a button is pressed, if a button is pressed check if it's correct and if so return true. if not, return false. 
-  while(true) 
-  {
+  while(true){
    int button0 = digitalRead(buttonArray[0]);
    int button1 = digitalRead(buttonArray[1]);  
    int button2 = digitalRead(buttonArray[2]); 
    int button3 = digitalRead(buttonArray[3]); 
    
    //because we are using input_pullup ! indicted a button is pressed --> if any button is pressed go to the rest of the code
-   if (!button0 || !button1 || !button2 || !button3)
-   {
+   if (!button0 || !button1 || !button2 || !button3){
       //Delay briefly to avoid double counting button press
       delay(250);
 
       //light up the corresponding led when a button is pressed
-      if (buttonNum == 0)
-      {
+      if (buttonNum == 0){
         digitalWrite(ledArray[0], HIGH);
         delay(250);
         digitalWrite(ledArray[0], LOW);
-      }
-      else if (buttonNum == 1)
-      {
+      } else if (buttonNum == 1){
         digitalWrite(ledArray[1], HIGH);
         delay(250);
         digitalWrite(ledArray[1], LOW);
-      }
-      else if (buttonNum == 2)
-      {
+      } else if (buttonNum == 2){
         digitalWrite(ledArray[2], HIGH);
         delay(250);
         digitalWrite(ledArray[2], LOW);
-      }
-      else if (buttonNum == 3)
-      {
+      } else if (buttonNum == 3){
         digitalWrite(ledArray[3], HIGH);
         delay(250);
         digitalWrite(ledArray[3], LOW);
       }
       
       //check if correct button was pressed
-      if (buttonNum == 0 && button0 == 0)
-      {
+      if (buttonNum == 0 && button0 == 0){
         Serial.println("0 Pressed");
         return true;
-      }
-      else if (buttonNum == 1 && button1 == 0)
-      {
+      } else if (buttonNum == 1 && button1 == 0){
         Serial.println("1 Pressed");
         return true;
-      }
-      else if (buttonNum == 2 && button2 == 0)
-      {
+      } else if (buttonNum == 2 && button2 == 0){
         Serial.println("2 Pressed");
         return true;
-      }
-      else if (buttonNum == 3 && button3 == 0)
-      {
+      } else if (buttonNum == 3 && button3 == 0){
         Serial.println("3 Pressed");
         return true;
-      }
-      else
-      {
+      } else{
         return false;
       }
     }
@@ -309,65 +268,38 @@ boolean waitForInput(int buttonNum)
 }
 
 //after win - have lights scroll quickly
-void winDisplay()
-{
-digitalWrite(ledArray[0], HIGH);
-delay(75);
-digitalWrite(ledArray[0], LOW);
-delay(75);
-digitalWrite(ledArray[1], HIGH);
-delay(75);
-digitalWrite(ledArray[1], LOW);
-delay(75);
-digitalWrite(ledArray[2], HIGH);
-delay(75);
-digitalWrite(ledArray[2], LOW);
-delay(75);
-digitalWrite(ledArray[3], HIGH);
-delay(75);
-digitalWrite(ledArray[3], LOW);
-delay(75);
-digitalWrite(ledArray[2], HIGH);
-delay(75);
-digitalWrite(ledArray[2], LOW);
-delay(75);
-digitalWrite(ledArray[1], HIGH);
-delay(75);
-digitalWrite(ledArray[1], LOW);
-delay(75);
-digitalWrite(ledArray[0], HIGH);
-delay(75);
-digitalWrite(ledArray[0], LOW);
-delay(75);
+void winDisplay(){
+  digitalWrite(ledArray[0], HIGH);
+  delay(75);
+  digitalWrite(ledArray[0], LOW);
+  delay(75);
+  digitalWrite(ledArray[1], HIGH);
+  delay(75);
+  digitalWrite(ledArray[1], LOW);
+  delay(75);
+  digitalWrite(ledArray[2], HIGH);
+  delay(75);
+  digitalWrite(ledArray[2], LOW);
+  delay(75);
+  digitalWrite(ledArray[3], HIGH);
+  delay(75);
+  digitalWrite(ledArray[3], LOW);
+  delay(75);
+  digitalWrite(ledArray[2], HIGH);
+  delay(75);
+  digitalWrite(ledArray[2], LOW);
+  delay(75);
+  digitalWrite(ledArray[1], HIGH);
+  delay(75);
+  digitalWrite(ledArray[1], LOW);
+  delay(75);
+  digitalWrite(ledArray[0], HIGH);
+  delay(75);
+  digitalWrite(ledArray[0], LOW);
+  delay(75);
 }
 
-void winning_sound(void)
-{
-  //tone (pin number, frequency - I looked this up online to find the frequency for the notes I wanted, duration of tune)
-  Serial.println("buzzer1");
-  tone(buzzer, 294, 250);
-  delay(200);
-  tone(buzzer, 294, 250);
-  delay(200);
-  tone(buzzer, 294, 250);
-  delay(200);
-  tone(buzzer, 392, 500);
-  delay(500);
-  Serial.println("second 392");
-  tone(buzzer, 392, 250);
-  delay(200);
-  tone(buzzer, 440, 250);
-  delay(200);
-  tone(buzzer, 392, 250);
-  delay(200);
-  tone(buzzer, 440, 250);
-  delay(200);
-  tone(buzzer, 494, 500);
-}
-
-
-void loseDisplay()
-{
+void loseDisplay(){
   digitalWrite(ledArray[0], HIGH);
   digitalWrite(ledArray[1], HIGH);
   digitalWrite(ledArray[2], HIGH);
@@ -378,15 +310,4 @@ void loseDisplay()
   digitalWrite(ledArray[2], LOW);
   digitalWrite(ledArray[3], LOW);
   delay(200);
-}
-
-void losing_sound(void)
-{
-  Serial.println("losing_sound");
-  tone(buzzer, 98, 250);
-  delay(250);
-   tone(buzzer, 93, 250);
-  delay(250);
-   tone(buzzer, 87, 250);
-  delay(250);
 }
