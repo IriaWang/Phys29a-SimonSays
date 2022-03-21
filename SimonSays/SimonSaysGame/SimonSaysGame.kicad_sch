@@ -672,6 +672,7 @@
     )
   )
 
+
   (junction (at 163.83 41.91) (diameter 0) (color 0 0 0 0)
     (uuid 62a0b005-d543-412f-93b9-72a8d1c3610c)
   )
@@ -1440,7 +1441,7 @@
   (symbol (lib_id "power:GNDREF") (at 80.01 92.71 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid c87e2a1d-0b8d-4c0d-80f3-7cfe179f527b)
-    (property "Reference" "#PWR?" (id 0) (at 80.01 99.06 0)
+    (property "Reference" "#PWR011" (id 0) (at 80.01 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (id 1) (at 80.01 98.044 0))
@@ -1585,7 +1586,7 @@
       (reference "#PWR010") (unit 1) (value "GNDREF") (footprint "")
     )
     (path "/c87e2a1d-0b8d-4c0d-80f3-7cfe179f527b"
-      (reference "#PWR?") (unit 1) (value "GNDREF") (footprint "")
+      (reference "#PWR011") (unit 1) (value "GNDREF") (footprint "")
     )
     (path "/4791f0c8-eca1-472a-b5e7-1c3eff883c30"
       (reference "BT1") (unit 1) (value "4.5V") (footprint "Battery:BatteryHolder_Keystone_2479_3xAAA")

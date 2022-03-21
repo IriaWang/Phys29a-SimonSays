@@ -67,7 +67,6 @@ void loop () {
   
   if (gameState == 2){
     //You win!! - play winning sound and scroll through leds (winDisplay)3 times followed by lose display once for good transition.
-    //delay to give player time to release button press before winning sound plays
     delay(500);
     //winning_sound(); (we don't have a buzzer)
     winDisplay();
